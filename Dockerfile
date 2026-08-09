@@ -33,5 +33,8 @@ RUN pip3 install --no-cache-dir --upgrade pip \
     && pip3 install --no-cache-dir --upgrade -r sainibots.txt \
     && python3 -m pip install -U yt-dlp
 
+# Expose port 8000 for the web server
+EXPOSE 8000
+
 # Set the command to run the application
-CMD ["sh", "-c", "gunicorn app:app & python3 main.py"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:8000 app:app & python3 main.py"]
