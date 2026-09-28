@@ -1,0 +1,15 @@
+Flask
+pyrogram
+pyromod
+yt-dlp
+m3u8
+requests
+beautifulsoup4
+pycryptodomex
+cloudscraper
+pytube
+aiohttp
+aiofiles
+pytz
+ffmpeg-python
+tgcrypto
